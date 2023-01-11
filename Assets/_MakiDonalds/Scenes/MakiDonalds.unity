@@ -1497,6 +1497,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: gong
       objectReference: {fileID: 0}
+    - target: {fileID: 7685787169461465283, guid: 5a7d4eee0b6e7094ca4e342a13bed957,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.27898028
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685787169461465283, guid: 5a7d4eee0b6e7094ca4e342a13bed957,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.042965867
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685787169461465283, guid: 5a7d4eee0b6e7094ca4e342a13bed957,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00004280552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685787169461465283, guid: 5a7d4eee0b6e7094ca4e342a13bed957,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.2347626
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685787169461465283, guid: 5a7d4eee0b6e7094ca4e342a13bed957,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.01870442
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a7d4eee0b6e7094ca4e342a13bed957, type: 3}
 --- !u!4 &1196778823 stripped
