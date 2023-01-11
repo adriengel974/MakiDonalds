@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9219955102739875418}
   m_Layer: 0
   m_Name: SeaweedGroup
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 6250953817582313083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2770337, y: 1.072, z: 1.6820186}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8920878005581903879}
   - {fileID: 7386284728859741419}
@@ -311,17 +311,17 @@ PrefabInstance:
     - target: {fileID: 8699658260865505497, guid: 72f0e235636150a41a0a16cf5ab56570,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0426
+      value: -0.0496
       objectReference: {fileID: 0}
     - target: {fileID: 8699658260865505497, guid: 72f0e235636150a41a0a16cf5ab56570,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0356
+      value: -0.0418
       objectReference: {fileID: 0}
     - target: {fileID: 8699658260865505497, guid: 72f0e235636150a41a0a16cf5ab56570,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0676
+      value: -0.0568
       objectReference: {fileID: 0}
     - target: {fileID: 8699658260865505497, guid: 72f0e235636150a41a0a16cf5ab56570,
         type: 3}
