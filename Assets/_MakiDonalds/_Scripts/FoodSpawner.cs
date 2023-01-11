@@ -9,7 +9,9 @@ public class FoodSpawner : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Hand")
+        {
             Instantiate(food,other.transform);
-        //food.transform.parent = other.transform; 
+            food.transform.parent = other.transform; 
+        }
     }
 }

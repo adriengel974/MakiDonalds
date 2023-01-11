@@ -137,7 +137,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219111401210 stripped
 Transform:
@@ -227,7 +229,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219195723530 stripped
 Transform:
@@ -307,7 +311,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219639182551 stripped
 Transform:
@@ -382,7 +388,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219779093046 stripped
 Transform:
@@ -457,7 +465,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656218317792447 stripped
 Transform:
@@ -542,7 +552,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656218418658989 stripped
 Transform:
