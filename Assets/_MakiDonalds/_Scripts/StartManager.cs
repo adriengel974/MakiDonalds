@@ -10,7 +10,20 @@ public class StartManager : MonoBehaviour
         {
             transform.GetChild(0).gameObject.SetActive(false);
            
-            GetComponent<AudioSource>().Play(0);     
+            GetComponent<AudioSource>().Play(0); 
+            
+            GetComponentInParent<Animator>().SetBool("Hit",true);
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Mallet")
+        {
+            
+
+            GetComponentInParent<Animator>().SetBool("Hit", false);
 
         }
     }
