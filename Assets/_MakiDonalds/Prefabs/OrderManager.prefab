@@ -77,9 +77,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _orderPrefabs:
-  - {fileID: 4754988608373400866, guid: 711942662eaba964dade85d63b3e50e3, type: 3}
-  - {fileID: 6591887092098446274, guid: ccf7ed13fd089cf43a187c4f0ed22ee5, type: 3}
-  - {fileID: 8927409095167910038, guid: 33feeba33f39d334383e6be4fb48b2d3, type: 3}
+  - {fileID: 2584371536301392110, guid: 1ade0ae057362e8419fdd0a90bcf7f69, type: 3}
+  - {fileID: 1602710676732259394, guid: 386d7ee31f3b82e4b92ed0750fbe24f6, type: 3}
+  - {fileID: 3168027077612724081, guid: 9ed3cc1c826456f45ae948aaa7060a9b, type: 3}
   _timeForOrderSpawning: 1
   _orderPlaces:
   - {fileID: 5853084594538317084}
@@ -87,6 +87,7 @@ MonoBehaviour:
   - {fileID: 5853084595408073516}
   - {fileID: 5853084596398393063}
   - {fileID: 5853084596552043972}
+  _orderPlacesUsed: 
 --- !u!1 &5853084595058499431
 GameObject:
   m_ObjectHideFlags: 0
