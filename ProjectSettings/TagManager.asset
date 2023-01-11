@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Tutorial2Grab
   - Mallet
+  - Egg
+  - Rice
+  - Seaweed
+  - Fish
+  - Food
   layers:
   - Default
   - TransparentFX

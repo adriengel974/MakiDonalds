@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class StartManager : MonoBehaviour
 {
+    GameObject[] foods;
+
+    private void Awake()
+    {
+        foods = GameObject.FindGameObjectsWithTag("Food");
+        for(int i = 0; i < foods.Length; i++)
+        {
+            foods[i].SetActive(false);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Mallet")
@@ -13,6 +23,13 @@ public class StartManager : MonoBehaviour
             GetComponent<AudioSource>().Play(0); 
             
             GetComponentInParent<Animator>().SetBool("Hit",true);
+
+
+            for (int i = 0; i < foods.Length; i++)
+            {
+                foods[i].SetActive(true);
+            }
+
 
         }
     }
