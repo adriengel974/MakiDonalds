@@ -4,17 +4,30 @@ using UnityEngine;
 
 public class StartManager : MonoBehaviour
 {
+    public static StartManager Instance;
+
     GameObject[] foods;
     public bool gameStartStatus;
 
     private void Awake()
     {
-        gameStartStatus = false;
-        foods = GameObject.FindGameObjectsWithTag("Food");
-        for(int i = 0; i < foods.Length; i++)
+        if(Instance == null)
         {
-            foods[i].SetActive(false);
+            Instance = this;
+
+            gameStartStatus = false;
+            foods = GameObject.FindGameObjectsWithTag("Food");
+            for (int i = 0; i < foods.Length; i++)
+            {
+                foods[i].SetActive(false);
+            }
         }
+        else
+        {
+            Debug.LogWarning("Multiple instances of StartManager!");
+            gameObject.SetActive(false);
+        }
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +46,8 @@ public class StartManager : MonoBehaviour
             }
 
             gameStartStatus = true;
+
+            OrderManager.Instance.StartSpawn();
         }
     }
 

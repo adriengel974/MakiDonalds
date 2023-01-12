@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Order : MonoBehaviour
 {
@@ -10,18 +11,36 @@ public class Order : MonoBehaviour
     [SerializeField]
     GameObject _orderBlueprint;
 
+    XRGrabInteractable _orderInteractable;
+
+    public int OrderID = 0;
+
     private void Awake()
     {
         _orderBlueprint.SetActive(false);
+
+        _orderInteractable = _order.GetComponent<XRGrabInteractable>();
+
+        _orderInteractable.selectEntered.AddListener(OrderIsGrabbed);
+        _orderInteractable.selectExited.AddListener(OrderIsNotGrabbed);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        // TODO move to Grabb and UnGrabb
-        if(_order.transform.position != _orderBlueprint.transform.position)
-            _orderBlueprint.SetActive(true);
-        else
-            _orderBlueprint.SetActive(false);
+        _orderInteractable.selectEntered.RemoveAllListeners();
+        _orderInteractable.selectExited.RemoveAllListeners();
+    }
+
+    public void OrderIsGrabbed(SelectEnterEventArgs args)
+    {
+        _orderBlueprint.SetActive(true);
+    }
+
+    void OrderIsNotGrabbed(SelectExitEventArgs args)
+    {
+        _orderBlueprint.SetActive(false);
+
+        _orderInteractable.transform.position = transform.position;
+        _orderInteractable.transform.rotation = transform.rotation;
     }
 }

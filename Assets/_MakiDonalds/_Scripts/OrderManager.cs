@@ -9,7 +9,7 @@ public class OrderManager : MonoBehaviour
     [SerializeField]
     GameObject[] _orderPrefabs;
 
-    [SerializeField][Min(0.05f)]
+    [SerializeField][Min(2.0f)]
     float _timeForOrderSpawning = 15.0f;
 
     [SerializeField]
@@ -35,8 +35,6 @@ public class OrderManager : MonoBehaviour
         _orderPlacesUsed = new bool[_orderPlaces.Length];
         for (int i = 0; i < _orderPlacesUsed.Length; i++)
             _orderPlacesUsed[i] = false;
-
-        StartSpawn(); // TODO Remove
     }
 
     // Update is called once per frame
@@ -65,6 +63,8 @@ public class OrderManager : MonoBehaviour
             else
             {
                 Debug.Log("Perdu");
+
+                StartManager.Instance.gameStartStatus = false;
 
                 break;
             }
