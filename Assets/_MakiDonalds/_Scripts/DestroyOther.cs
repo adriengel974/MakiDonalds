@@ -6,9 +6,16 @@ public class DestroyOther : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag != "MalletGrab" ||
-           other.gameObject.tag != "mallet"     ||
-           other.gameObject.tag != "Order")
-        Destroy(other.gameObject);
+        if(other.gameObject.tag == "MalletGrab" ||
+           other.gameObject.tag == "Mallet"     ||
+           other.gameObject.tag == "Order")
+        {
+            Debug.Log("Can't destroy this object: " + other.gameObject.tag);
+        } else
+        {
+            Debug.Log("Destroy this object: " + other.gameObject.tag);
+            Destroy(other.gameObject);
+        }
+        
     }
 }
