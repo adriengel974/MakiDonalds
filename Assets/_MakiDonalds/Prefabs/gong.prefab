@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 968362852960668147}
   m_Layer: 0
   m_Name: mallet
-  m_TagString: Untagged
+  m_TagString: MalletGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 2946820494493993608}
   m_Layer: 0
   m_Name: mallet-suport
-  m_TagString: Untagged
+  m_TagString: MalletGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 8324974811749251770}
   m_Layer: 0
   m_Name: MalletAnchor
-  m_TagString: Untagged
+  m_TagString: MalletGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 9120406622473282822}
   m_Layer: 0
   m_Name: mallet
-  m_TagString: Untagged
+  m_TagString: MalletGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
