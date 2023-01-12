@@ -13,7 +13,8 @@ public class DishSpawner : MonoBehaviour
         Debug.Log("sdfvf");
         if (other.gameObject.tag == "Dish")
         {
-            Instantiate(dish, transform.position, transform.rotation);
+            GameObject go = Instantiate(dish, transform.position, other.transform.rotation);
+            go.transform.localScale *= 2;
         }
     }
 }
