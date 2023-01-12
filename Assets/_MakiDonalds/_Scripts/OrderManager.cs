@@ -80,6 +80,8 @@ public class OrderManager : MonoBehaviour
 
                 _orders[_orders.Length - 1].GetComponentInChildren<OrderValue>().orderId = _nextOrderId;
 
+                _orderPosition[_orders.Length - 1] = _nextOrderId;
+
                 StartCoroutine(OrderMovingToNextAvailablePlaceCoroutine(_orders[_orders.Length - 1], _nextOrderId));
 
                 _nextOrderId += 1;
@@ -140,13 +142,14 @@ public class OrderManager : MonoBehaviour
 
                     previousPosition = _orderPlaces[currentPlaceIndex].position;
 
-                    currentPlaceIndex = currentPlaceIndex - 1;
+                    _orderPosition[currentPlaceIndex] = 0;
+                    _orderPosition[currentPlaceIndex - 1] = orderId;
+                    _orders[currentPlaceIndex] = null;
+                    _orders[currentPlaceIndex - 1] = newOrder;
 
-                    _orderPosition[currentPlaceIndex + 1] = 0;
-                    _orderPosition[currentPlaceIndex] = orderId;
-                    _orders[currentPlaceIndex] = newOrder;
+                    currentPlaceIndex -= 1;
 
-                    currentLerpTime = 0.0f;
+                    currentLerpTime = frequencyUpdate;
                 }
             }
 
