@@ -10,17 +10,28 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         audio = GetComponent<AudioSource>();
-        audio.volume = 0.5f;
+        Debug.Log(audio.volume);
+        audio.volume = 0.4f;
+        Debug.Log(audio.volume);
     }
 
     public void VolumeUp()
     {
-        if(audio.volume <= 1) audio.volume += 0.1f;
+        if(audio.volume <= 1.0f)
+        {
+            audio.volume += 0.2f;
+            Debug.Log(audio.volume);
+        }
+           
     }
 
     public void VolumeDown()
     {
-        if (audio.volume >= 0) audio.volume -= 0.1f;
+        if (audio.volume >= 0.0f)
+        {
+            audio.volume -= 0.2f;
+            Debug.Log(audio.volume);
+        }
     }
 }
 

@@ -5,9 +5,11 @@ using UnityEngine;
 public class StartManager : MonoBehaviour
 {
     GameObject[] foods;
+    public bool gameStartStatus;
 
     private void Awake()
     {
+        gameStartStatus = false;
         foods = GameObject.FindGameObjectsWithTag("Food");
         for(int i = 0; i < foods.Length; i++)
         {
@@ -16,7 +18,7 @@ public class StartManager : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Mallet")
+        if (other.gameObject.tag == "Mallet" && !gameStartStatus)
         {
             transform.GetChild(0).gameObject.SetActive(false);
            
@@ -30,7 +32,7 @@ public class StartManager : MonoBehaviour
                 foods[i].SetActive(true);
             }
 
-
+            gameStartStatus = true;
         }
     }
 
@@ -38,10 +40,7 @@ public class StartManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Mallet")
         {
-            
-
             GetComponentInParent<Animator>().SetBool("Hit", false);
-
         }
     }
 
