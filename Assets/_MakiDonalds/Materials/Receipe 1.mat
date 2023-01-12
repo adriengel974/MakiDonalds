@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: oculus (4)
+  m_Name: Receipe 1
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
   - _NORMALMAP
@@ -23,9 +23,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: ac3b4cde9064b4b5aba317e910bb9806, type: 3}
-        m_Scale: {x: 1, y: 0.49}
-        m_Offset: {x: 0.04, y: 0.255}
+        m_Texture: {fileID: 2800000, guid: c446e61da1690495985a4292f9de2f78, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: b934ce890a7bb40b985f100a20945c2a, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -47,9 +47,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ac3b4cde9064b4b5aba317e910bb9806, type: 3}
-        m_Scale: {x: 1, y: 0.49}
-        m_Offset: {x: 0.04, y: 0.255}
+        m_Texture: {fileID: 2800000, guid: c446e61da1690495985a4292f9de2f78, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -112,7 +112,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2535302034976572442
+--- !u!114 &3733154807194791019
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
