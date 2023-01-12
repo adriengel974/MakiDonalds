@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _order: {fileID: 5017253005998396476}
   _orderBlueprint: {fileID: 7297038171391405259}
+  _orderRecipe: 3
+  OrderID: 0
 --- !u!1001 &314620804915245342
 PrefabInstance:
   m_ObjectHideFlags: 0
