@@ -17,7 +17,6 @@ TagManager:
   - Dish
   - Order
   - Receipe
-  - MalletGrab
   layers:
   - Default
   - TransparentFX

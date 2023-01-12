@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(XRGrabInteractable))]
 public class GrabIngredient : MonoBehaviour
 {
     XRGrabInteractable grabInteractable;
@@ -26,11 +25,11 @@ public class GrabIngredient : MonoBehaviour
 
     public void ObjectIsGrabbed(SelectEnterEventArgs args)
     {
-        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Rigidbody>().isKinematic = false;
     }
 
     void ObjectIsNotGrabbed(SelectExitEventArgs args)
     {
-        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 }
