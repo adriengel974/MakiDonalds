@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8053962113811915115}
+  - component: {fileID: 1888880229122711218}
+  - component: {fileID: 3793930676250545293}
   m_Layer: 0
   m_Name: EggGroup
   m_TagString: Food
@@ -37,6 +39,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1888880229122711218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195110619326374210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25685942, y: 0.21750998, z: 0.2118293}
+  m_Center: {x: 0.09307772, y: 0.8028048, z: -0.9672435}
+--- !u!114 &3793930676250545293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195110619326374210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3f5107f6a847847b7c82461e1cca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: {fileID: 6461241349944246228, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!1001 &5658226019257484180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,7 +137,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219111401210 stripped
 Transform:
@@ -199,7 +229,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219195723530 stripped
 Transform:
@@ -279,7 +311,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219639182551 stripped
 Transform:
@@ -354,7 +388,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656219779093046 stripped
 Transform:
@@ -429,7 +465,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656218317792447 stripped
 Transform:
@@ -514,7 +552,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3378557743019812165, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
+    - {fileID: 5306017179054347521, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ad5df4f715567442b3fcc867a35321c, type: 3}
 --- !u!4 &2046656218418658989 stripped
 Transform:

@@ -12,6 +12,7 @@ TagManager:
   - Seaweed
   - Fish
   - Food
+  - Hand
   layers:
   - Default
   - TransparentFX
