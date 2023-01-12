@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3223117851205412859}
   - component: {fileID: 1951478170848766046}
   - component: {fileID: 4391568495453559956}
+  - component: {fileID: -163052883575731263}
+  - component: {fileID: -6994713230204591905}
+  - component: {fileID: 3934766709295436281}
   m_Layer: 0
   m_Name: rice
   m_TagString: Rice
@@ -83,3 +86,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &-163052883575731263
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878081874245320001}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-6994713230204591905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878081874245320001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01679013, y: 0.016790126, z: 0.01679013}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3934766709295436281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878081874245320001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed517b97f7f8e485ab4badabf96f6d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodResult:
+  - {fileID: 7344689493357353437, guid: ac4af4ae894625e42b0babec360524aa, type: 3}
+  - {fileID: 7304614686242708281, guid: faa29f9969e3e36469c43a8c09c5084d, type: 3}
+  - {fileID: 9004982616985520173, guid: b9a059b40beb8b941abfe45f8801b518, type: 3}
