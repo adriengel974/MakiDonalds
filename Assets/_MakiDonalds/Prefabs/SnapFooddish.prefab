@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 7164429127352220236}
   m_Layer: 0
   m_Name: SnapFooddish
-  m_TagString: Untagged
+  m_TagString: Dish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,8 +278,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.13066746, y: 0.13066745, z: 0.04184802}
-  m_Center: {x: -0.000000052154064, y: 0.00000026822127, z: -0.009296581}
+  m_Size: {x: 0.21883035, y: 0.22451925, z: 0.07381964}
+  m_Center: {x: 0.005820155, y: -0.014432788, z: -0.008474231}
 --- !u!64 &7164429127352220236
 MeshCollider:
   m_ObjectHideFlags: 0

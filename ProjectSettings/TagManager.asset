@@ -13,6 +13,8 @@ TagManager:
   - Fish
   - Food
   - Hand
+  - SendingZone
+  - Dish
   layers:
   - Default
   - TransparentFX
