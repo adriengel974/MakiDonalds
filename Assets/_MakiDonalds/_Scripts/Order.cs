@@ -51,4 +51,9 @@ public class Order : MonoBehaviour
         _orderInteractable.transform.position = transform.position;
         _orderInteractable.transform.rotation = transform.rotation;
     }
+
+    public void DespawnOrder()
+    {
+        Destroy(gameObject);
+    }
 }

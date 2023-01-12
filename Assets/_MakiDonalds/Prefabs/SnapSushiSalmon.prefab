@@ -129,9 +129,10 @@ GameObject:
   - component: {fileID: 8086624533545432235}
   - component: {fileID: 8086624533545432239}
   - component: {fileID: 8086624533545432234}
+  - component: {fileID: -2309094809426371928}
   m_Layer: 0
   m_Name: SnapSushiSalmon
-  m_TagString: Untagged
+  m_TagString: Receipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,3 +348,16 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &-2309094809426371928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004982616985520173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752736ed86ecf489a8da722156caf468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodValue: 0
