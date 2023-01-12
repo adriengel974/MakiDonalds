@@ -10,8 +10,7 @@ public class FoodSpawner : MonoBehaviour
     {
         if(other.gameObject.tag == "Hand")
         {
-            Instantiate(food,other.transform);
-            food.transform.parent = other.transform; 
+            Instantiate(food,other.transform.position, other.transform.rotation);
         }
     }
 }
