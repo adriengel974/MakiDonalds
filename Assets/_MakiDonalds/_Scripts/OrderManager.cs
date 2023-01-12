@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class OrderManager : MonoBehaviour
@@ -16,7 +17,17 @@ public class OrderManager : MonoBehaviour
     Transform[] _orderPlaces;
 
     [SerializeField]
-    bool[] _orderPlacesUsed;
+    int[] _orderPosition;
+
+    GameObject[] _orders;
+
+    int _nextOrderId = 1;
+
+    [SerializeField]
+    GameObject endGame;
+
+    [SerializeField]
+    GameObject _scoreTextGO;
 
     private void Awake()
     {
@@ -32,15 +43,24 @@ public class OrderManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _orderPlacesUsed = new bool[_orderPlaces.Length];
-        for (int i = 0; i < _orderPlacesUsed.Length; i++)
-            _orderPlacesUsed[i] = false;
+        _orderPosition = new int[_orderPlaces.Length];
+        for (int i = 0; i < _orderPosition.Length; i++)
+            _orderPosition[i] = 0;
+
+        _orders = new GameObject[_orderPlaces.Length];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DespawnOrder(int orderId)
     {
-        
+        for(int i = 0; i < _orderPosition.Length; i++)
+        {
+            if (_orderPosition[i] == orderId)
+            {
+                Destroy(_orders[i]);
+                _orderPosition[i] = 0;
+                break;
+            }
+        }
     }
 
     public void StartSpawn()
@@ -54,11 +74,15 @@ public class OrderManager : MonoBehaviour
         {
             yield return new WaitForSeconds(_timeForOrderSpawning);
 
-            if(!_orderPlacesUsed[_orderPlacesUsed.Length - 1])
+            if(_orderPosition[_orderPosition.Length - 1] == 0)
             {
-                GameObject newOrder = Instantiate(_orderPrefabs[Random.Range(0, _orderPrefabs.Length)], transform);
+                _orders[_orders.Length - 1] = Instantiate(_orderPrefabs[Random.Range(0, _orderPrefabs.Length)], transform);
 
-                StartCoroutine(OrderMovingToNextAvailablePlaceCoroutine(newOrder));
+                _orders[_orders.Length - 1].GetComponentInChildren<OrderValue>().orderId = _nextOrderId;
+
+                StartCoroutine(OrderMovingToNextAvailablePlaceCoroutine(_orders[_orders.Length - 1], _nextOrderId));
+
+                _nextOrderId += 1;
             }
             else
             {
@@ -66,15 +90,21 @@ public class OrderManager : MonoBehaviour
 
                 StartManager.Instance.gameStartStatus = false;
 
+                endGame.SetActive(true);
+
+                TMP_Text text = _scoreTextGO.GetComponent<TMP_Text>();
+
+                text.text = ValidateFood.Instance.score.ToString();
+
                 break;
             }
         }
     }
 
-    IEnumerator OrderMovingToNextAvailablePlaceCoroutine(GameObject newOrder)
+    IEnumerator OrderMovingToNextAvailablePlaceCoroutine(GameObject newOrder, int orderId)
     {
-        int currentPlaceIndex = _orderPlacesUsed.Length - 1;
-        _orderPlacesUsed[currentPlaceIndex] = true;
+        int currentPlaceIndex = _orderPosition.Length - 1;
+        _orderPosition[currentPlaceIndex] = orderId;
         float currentLerpTime = 0.0f;
         float transitionTime = 1.0f;
         Vector3 previousPosition = newOrder.transform.position;
@@ -104,7 +134,7 @@ public class OrderManager : MonoBehaviour
                     break;
                 }
 
-                if(!_orderPlacesUsed[currentPlaceIndex - 1])
+                if(_orderPosition[currentPlaceIndex - 1] == 0)
                 {
                     animationRunning = true;
 
@@ -112,8 +142,9 @@ public class OrderManager : MonoBehaviour
 
                     currentPlaceIndex = currentPlaceIndex - 1;
 
-                    _orderPlacesUsed[currentPlaceIndex + 1] = false;
-                    _orderPlacesUsed[currentPlaceIndex] = true;
+                    _orderPosition[currentPlaceIndex + 1] = 0;
+                    _orderPosition[currentPlaceIndex] = orderId;
+                    _orders[currentPlaceIndex] = newOrder;
 
                     currentLerpTime = 0.0f;
                 }

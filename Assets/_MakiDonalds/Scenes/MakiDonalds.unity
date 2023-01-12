@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 147657984}
-  m_IndirectSpecularColor: {r: 0.014391932, g: 0.057861358, b: 0.105772234, a: 1}
+  m_IndirectSpecularColor: {r: 0.01439193, g: 0.05786136, b: 0.105772234, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -992,6 +992,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6942642360393038661}
     m_Modifications:
+    - target: {fileID: 4212262851184477723, guid: 263b938d671541949bd88ab4eea9939f,
+        type: 3}
+      propertyPath: endGame
+      value: 
+      objectReference: {fileID: 1580241958}
+    - target: {fileID: 4212262851184477723, guid: 263b938d671541949bd88ab4eea9939f,
+        type: 3}
+      propertyPath: _scoreTextGO
+      value: 
+      objectReference: {fileID: 1039237161}
     - target: {fileID: 5853084594564057018, guid: 263b938d671541949bd88ab4eea9939f,
         type: 3}
       propertyPath: m_Name
@@ -1351,7 +1361,7 @@ PrefabInstance:
     - target: {fileID: 813930174, guid: 3f0c6f663fb004634bb631ad7f3ae013, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 770300996404227184}
+      objectReference: {fileID: 0}
     - target: {fileID: 7247630501255734142, guid: 3f0c6f663fb004634bb631ad7f3ae013,
         type: 3}
       propertyPath: m_RootOrder
@@ -1412,11 +1422,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: ====END GAME====
       objectReference: {fileID: 0}
+    - target: {fileID: 7247630501255734143, guid: 3f0c6f663fb004634bb631ad7f3ae013,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247630502177969008, guid: 3f0c6f663fb004634bb631ad7f3ae013,
+        type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f0c6f663fb004634bb631ad7f3ae013, type: 3}
 --- !u!4 &1039237160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7247630501255734142, guid: 3f0c6f663fb004634bb631ad7f3ae013,
+    type: 3}
+  m_PrefabInstance: {fileID: 1039237159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1039237161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7247630502177969014, guid: 3f0c6f663fb004634bb631ad7f3ae013,
     type: 3}
   m_PrefabInstance: {fileID: 1039237159}
   m_PrefabAsset: {fileID: 0}
@@ -1989,6 +2015,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465603813}
   m_Mesh: {fileID: -1760711487321341110, guid: 98d70b666dc69a4448760f0cd9677a56, type: 3}
+--- !u!1 &1580241958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7247630501255734143, guid: 3f0c6f663fb004634bb631ad7f3ae013,
+    type: 3}
+  m_PrefabInstance: {fileID: 1039237159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1700547579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7597540673670871328, guid: ccbef27c12fc64e66ba9e3490a791c8c,
@@ -9182,6 +9214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ca847ac26314c6a8b552335db5d598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!4 &7668280808829936173
 Transform:
   m_ObjectHideFlags: 0

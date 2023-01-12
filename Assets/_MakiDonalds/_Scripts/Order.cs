@@ -11,17 +11,9 @@ public class Order : MonoBehaviour
     [SerializeField]
     GameObject _orderBlueprint;
 
-    [SerializeField]
-    int _orderRecipe = 0;
-
     XRGrabInteractable _orderInteractable;
 
     public int OrderID = 0;
-
-    public int GetOrderRecipe()
-    {
-        return _orderRecipe;
-    }
 
     private void Awake()
     {
