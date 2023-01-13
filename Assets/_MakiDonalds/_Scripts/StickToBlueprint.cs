@@ -11,22 +11,22 @@ public class StickToBlueprint : MonoBehaviour
     [SerializeField]
     GameObject _Blueprint;
 
-    XRGrabInteractable _orderInteractable;
+    XRGrabInteractable _Interactable;
 
     private void Awake()
     {
         _Blueprint.SetActive(false);
 
-        _orderInteractable = _originalPrefab.GetComponent<XRGrabInteractable>();
+        _Interactable = _originalPrefab.GetComponent<XRGrabInteractable>();
 
-        _orderInteractable.selectEntered.AddListener(OrderIsGrabbed);
-        _orderInteractable.selectExited.AddListener(OrderIsNotGrabbed);
+        _Interactable.selectEntered.AddListener(OrderIsGrabbed);
+        _Interactable.selectExited.AddListener(OrderIsNotGrabbed);
     }
 
     private void OnDisable()
     {
-        _orderInteractable.selectEntered.RemoveAllListeners();
-        _orderInteractable.selectExited.RemoveAllListeners();
+        _Interactable.selectEntered.RemoveAllListeners();
+        _Interactable.selectExited.RemoveAllListeners();
     }
 
     public void OrderIsGrabbed(SelectEnterEventArgs args)
@@ -38,7 +38,7 @@ public class StickToBlueprint : MonoBehaviour
     {
         _Blueprint.SetActive(false);
 
-        _orderInteractable.transform.position = transform.position;
-        _orderInteractable.transform.rotation = transform.rotation;
+        _Interactable.transform.position = transform.position;
+        _Interactable.transform.rotation = transform.rotation;
     }
 }

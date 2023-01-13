@@ -9,7 +9,8 @@ public class DestroyOther : MonoBehaviour
         if(other.gameObject.tag == "MalletGrab" ||
            other.gameObject.tag == "Mallet"     ||
            other.gameObject.tag == "Order" ||
-           other.gameObject.tag == "Hand")
+           other.gameObject.tag == "Hand" ||
+           other.gameObject.tag == "MainCamera")
         {
             Debug.Log("Can't destroy this object: " + other.gameObject.tag);
         } else
