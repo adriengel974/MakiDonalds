@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MakiDonalds/Scenes/WhiteBox.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_MakiDonalds/Scenes/V2_MakiDonalds.unity
+    guid: ef28d6b4479d1fb4aa57640fb436a59e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 494087805176d814aa50e893daefeac2,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1d87fb68b46c22748b3b1eb5a754b56d,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 45bd27ac6ce174a8c894dd2b90182b64,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1227e92de9901ee438d240438910396f,
       type: 2}
